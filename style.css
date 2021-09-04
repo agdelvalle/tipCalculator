@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:hsl(185, 41%, 84%);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#interface{
+    background-color: hsl(0, 0%, 100%);
+    height: 100%;
+    padding: 2%;
+    border-radius: 10px;
+    margin: 5%;
+}
+
+
+input[type=text]{
+    padding: 2%;
+    background-color: hsl(185, 41%, 84%);
+    border-radius: 5px;
+}
+
+#button-cont{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+#button-cont .button{
+    padding: 5%;
+    background-color: hsl(183, 100%, 15%);
+    color:  hsl(0, 0%, 100%);
+    width: 4em;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#left-cont{
+    margin: 20%;
+}
+
+#right-cont{
+    background-color: hsl(183, 100%, 15%);
+    padding: 10%;
+    border-radius: 10px;
+}
+
+.price {
+    color: hsl(172, 67%, 45%);
+}
+
+#reset {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border: solid black 2px;
+    padding: 2%;
+    background-color: hsl(183, 100%, 15%);
+    color:  hsl(0, 0%, 100%);
+    width: 60%;
+    margin: 2% 20%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#reset:hover{
+    background-color: hsl(172, 67%, 45%);
+}
+
+
+@media only screen and (min-width: 320px){
+    #interface{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+        padding: 10% 4%;
+        row-gap: 1em;
+    }
+
+    #left-cont{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin: 5% 2%;
+    }
+
+    #right-cont{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        padding: 10% 4%;
+    }
+
+}
+
+@media only screen and (min-width: 900px){
+
+    #interface{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        padding: 0;
+        margin: 10% 25%;
+    }
+    
+    #left-cont{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+    
+    #right-cont{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+    }
+    
+    
+}
