@@ -36,9 +36,18 @@ input[type=text]{
     padding: 5%;
     background-color: hsl(183, 100%, 15%);
     color:  hsl(0, 0%, 100%);
-    width: 4em;
+    width: 75px;
     text-align: center;
     border-radius: 5px;
+}
+
+#button-cont div:hover, #button-cont input:hover {
+    background-color:  hsl(185, 41%, 84%);
+}
+
+#button-cont div:focus, #button-cont input:focus {
+    background-color:  hsl(172, 67%, 45%);
+    color: hsl(185, 41%, 84%);
 }
 
 #left-cont{
