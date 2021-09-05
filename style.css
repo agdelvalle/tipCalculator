@@ -6,7 +6,8 @@
 
 body {
     background-color:hsl(185, 41%, 84%);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Space Mono';
+    font-weight: 700;
 }
 
 #interface{
@@ -16,7 +17,6 @@ body {
     border-radius: 10px;
     margin: 5%;
 }
-
 
 input[type=text]{
     padding: 2%;

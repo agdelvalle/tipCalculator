@@ -3,6 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <!-- fonts link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
@@ -25,7 +31,7 @@
       <div id="button-cont">
         <div class="button btn">15%</div>  
         <div class="button btn">5%</div>
-        <div class="button btn">10%</div>
+        <div class="button btn" value="10">10%</div>
         <div class="button btn">25%</div>
         <div class="button btn">50%</div>
         <input type="text" class="button" id="custom" placeholder="custom">
@@ -40,7 +46,7 @@
       <p>Tip Amount / person</p>
       <p class="price" id="finalTip">$0.00</p>
       <p>Total / person</p>
-      <p class="price" id="perPerson">$0.00</p>
+      <p class="price" id="finalAmt">$0.00</p>
       <div id="reset" class="button">Reset</div>
     </div>
   </div>
